@@ -10,7 +10,7 @@ WorkplaceSearchClient client = new WorkplaceSearchClient.Builder(
 
 ### Indexing Documents
 
-Call the `indexDocuments` passing a json array of the documents you want to index:
+Call the `indexDocuments` passing a json array of the documents you want to index and then calling `execute()`:
 
 ```java
 Response<Document> response = client.indexDocuments("[{'title': 'Blog Title', 'author': 'John Doe'}]").execute();
